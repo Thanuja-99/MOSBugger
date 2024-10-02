@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management with Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 90%;
+            margin: 40px auto;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .card-small {
+            width: 30%; /* Smaller Add Customer card */
+        }
+
+        .card-large {
+            width: 65%; /* Larger Customer List card */
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2277e7;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        .search-bar {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .search-bar input {
+            width: 70%;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+        }
+
+        .back-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgba(111, 30, 81,1.0);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .back-button:hover {
+        background-color:rgba(255, 195, 18,1.0);
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Add Customer Card -->
+        <div class="card card-small">
+            <h2>Add Customer</h2>
+            <form id="customerForm">
+                <input type="text" id="name" placeholder="Enter customer name" required><br>
+                <input type="text" id="contact" placeholder="Enter customer contact (10 digits)" required><br>
+                <button type="submit">Add Customer</button>
+            </form>
+        </div>
+
+        <!-- Customer List Card -->
+        <div class="card card-large">
+            <h2>Customer List</h2>
+
+            <!-- Search Bar for Customer Phone Number -->
+            <div class="search-bar">
+                <input type="text" id="searchPhone" placeholder="Search by phone number">
+                <button onclick="searchCustomer()">Search</button>
+            </div>
+
+            <table id="customerTable">
+                <thead>
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Name</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dynamic rows will go here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <a href="dashboard.html" class="back-button">Back to Dashboard</a>
+    <script src="app.js"></script>
+    
+</body>
+</html>

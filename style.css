@@ -1,0 +1,102 @@
+/*---------------------------Login Page Start ------------------------------------ */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(116, 125, 140,1.0);
+    font-family: Arial, sans-serif;
+}
+.container-login {
+    width: 400px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(44, 62, 80,1.0);
+    border-radius: 10px;
+}
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+.login-form input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.login-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-form button:hover {
+    background-color: #45a049;
+}
+
+/*---------------------------Login Page End------------------------------------ */
+
+
+/*---------------------------Dash Board Start--------------------------------- */
+ /* General styling for the container */
+ .dashboard-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+/* Styling for the cards */
+.card {
+    width: 18rem; /* Ensures all cards have the same width */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    margin-bottom: 30px; /* Adds spacing between cards */
+}
+
+/* Hover effect to make the cards more interactive */
+.card:hover {
+    transform: translateY(-10px); /* Lifts the card slightly */
+}
+
+/* Card title styling */
+.card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Padding inside card body */
+.card-body {
+    padding: 20px;
+}
+
+/* Making the button more stylish */
+.btn {
+    background-color: #007bff !important; /* Use !important if needed */
+    color: white !important; /* Ensure text is white */
+    border-radius: 50px; /* Rounded button */
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #0056b3 !important; /* Darker blue on hover */
+}
+
+/*---------------------------Dash Board End--------------------------------- */
+

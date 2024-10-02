@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- link css file -->
+     <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    
+    <div class="container-login">
+        <!-- Logo section -->
+        <div class="logo">
+            <img src="image/Burger Shop Logo.png" alt="Logo">
+        </div>
+
+        <!-- Login form -->
+        <form class="login-form" onsubmit="return false;">
+            <input type="text" placeholder="Username" id="userName" required>
+            <input type="password" placeholder="Password" id="password" required>
+            <button type="submit" id="btn_login_OnAction" onclick="login()">Login</button>
+        </form>
+        
+    </div>
+
+    <!-- link java Script -->
+     <script src="app.js"></script>
+</body>
+</html>
